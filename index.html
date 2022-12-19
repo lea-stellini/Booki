@@ -10,12 +10,37 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <i class="fa-solid fa-money-bill-wave"></i>
-    <h1>Text police</h1>
+    <header>
+        <section id="top-bar">
+            <img src="./Images/logo/Booki.png" alt="logo" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <form>
+                <label for="search"><i class="fa-sharp fa-solid fa-location-dot"></i></label>
+                <input type="search" id="search" value="Marseille, France" class="bold">
+                <input type="submit" value="Recherche" class="bold">
+            </form>
+            <div>
+                <h2 class="bold">Filtres</h2>
+                <div>
+                    <button class="bold filter"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                    <button class="bold filter"><i class="fa-solid fa-person"></i>Familial</button>
+                    <button class="bold filter"><i class="fa-solid fa-heart"></i>Romantique</button>
+                    <button class="bold filter"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+                </div>
+            </div>
+            <p><i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
-    <h2>Text police</h2>
-    <h3>Text police</h3>
-    <h4>Text police</h4>
+        </section>
+    </header>
     
 </body>
 </html>

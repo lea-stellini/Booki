@@ -1,34 +1,75 @@
 /*GENERAL*/
-
 body{
+    margin: auto 50px;
     font-family: 'Raleway', sans-serif;
 }
 
-.title{
+.bold{
     font-weight: 700;
 }
 
 h1{
-    size: 22px;
+    font-size: 22px;
 }
 
-h2{
-    size: 18px;
+h2, input{
+    font-size: 18px;
 }
 
 h3{
-    size: 16px;
+    font-size: 16px;
 }
 
 p, a{
     font-weight: 400;
+    font-size: 14px;
 }
 
 .cards{
-    size: 14px;
+    font-size: 14px;
 }
 
 a{
-    size: 16px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000
+}
+
+/*HEADER*/
+#top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 61.09px;
+    height: 19px;
+}
+
+ul{
+   width: 243px;
+   display: flex;
+   justify-content: space-between;
+   padding-right: 22px;
+
+}
+
+li{
+    list-style: none; 
+}
+
+li a{
+    font-weight: 500;
+}
+
+li a:hover{
+    color: #0065FC;
+
+}
+
+
+.filter{
+    font-size: 17px;
 }
 
