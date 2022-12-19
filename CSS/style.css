@@ -1,4 +1,7 @@
 /*GENERAL*/
+*{
+    margin:0;
+}
 body{
     margin: auto 50px;
     font-family: 'Raleway', sans-serif;
@@ -10,6 +13,7 @@ body{
 
 h1{
     font-size: 22px;
+    margin-bottom: 8px;
 }
 
 h2, input{
@@ -36,10 +40,13 @@ a{
 }
 
 /*HEADER*/
+
+    /*TOP-BAR*/
 #top-bar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-end;
+    padding-bottom: 59px;
 }
 
 #logo{
@@ -48,32 +55,125 @@ a{
 }
 
 ul{
-   width: 243px;
+   width: 381px;
+   margin:0;
    display: flex;
    justify-content: space-between;
-   padding-right: 22px;
-
+   align-items: center;
 }
 
 li{
     list-style: none; 
+    width: 162px;
+    text-align: center;
+    padding-top: 48px;
 }
 
 li a{
     font-weight: 500;
+    text-align: center;
+    width: 100%;  
 }
 
 li a:hover{
     color: #0065FC;
-
 }
 
+li:hover{
+    padding-top:46px;
+    border-top: solid 2px #0065FC;
+}
+
+    /*SEARCH + FILTERS*/
+
+form{
+    display: flex;
+    margin: 20px 0 32px 0;
+    width: 418px;
+    height: 49px;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px;
+}
+
+label{
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+    background-color:#F2F2F2;
+}
+
+label i{
+    position: relative;
+    top: 16px;
+    left: 18px;
+}
+
+#search{
+    border: none;
+    padding: 0 12px 0 17px;
+}
+
+#submit{
+    border:solid 1px #0065FC;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    padding: 14px 16px;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 914px;
+    padding-bottom: 38px;
+}
+
+.filter-container{
+    width: 828px;
+    display: flex;
+    justify-content: space-between;
+}
 
 .filter{
     font-size: 17px;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    border: solid 2px #D9D9D9
 }
 
-.red{
-    background-color: red;
+.filter:hover{
+    background-color: #DEEBFF;
+    cursor: auto;
 }
+
+.filter i {
+    color: #0065FC;
+    margin-right: 10px;
+}
+
+.info-container{
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    width: 24px;
+    height:  24px;
+    margin-right: 11px;
+    border-radius: 50%;
+    border: solid 1px #D9D9D9;
+}
+
+.info i{
+    color: blue;
+    position:relative;
+    left: 9px;
+    top: 2px;
+}
+
+
+
+
 
