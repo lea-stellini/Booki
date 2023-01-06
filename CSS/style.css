@@ -309,7 +309,62 @@ label i{
     border: solid 5px #FFFFFF;
 }
 
+/* ACTIVITES */
 
+#activites{
+    margin-top: 60px;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+#activites h2{
+    margin-left: 20px;
+}
 
+#activites img{
+    height: 389px;
+    width: 302px;
+    border-radius: 20px 20px 0 0;
+}
 
+.activites-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.activites-cards a{
+    border-radius: 20px;
+    height: 445px;
+    box-shadow: 2px 2px 2px rgb(225, 225, 225);
+}
+
+.activites-cards h3{
+    margin: 20px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    background-color: #F2F2F2;
+    height: 225px;
+    margin-top: 61px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    margin: 45px 150px 0 70px;
+}
+
+footer h2{
+    line-height: 40px ;
+}
+
+footer a{
+    line-height: 35px;
+}
