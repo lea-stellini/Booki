@@ -128,7 +128,7 @@ label i{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 914px;
+    width: 70%;
     margin-bottom: 38px;
 }
 
@@ -220,7 +220,7 @@ label i{
     background-color: #F2F2F2;
     border-radius: 20px;
     width:880px;
-    height: 626px;
+    height: auto;
 }
 
 .container-hebergements{
@@ -313,7 +313,7 @@ label i{
 
 #activites{
     margin-top: 60px;
-    height: 495px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -336,7 +336,7 @@ label i{
 
 .activites-cards a{
     border-radius: 20px;
-    height: 445px;
+    height: auto;
     box-shadow: 2px 2px 2px rgb(225, 225, 225);
 }
 
@@ -351,14 +351,14 @@ footer{
     justify-content:flex-start;
     align-items: flex-start;
     background-color: #F2F2F2;
-    height: 225px;
+    height: auto;
     margin-top: 61px;
 }
 
 footer div{
     display: flex;
     flex-direction: column;
-    margin: 45px 150px 0 70px;
+    margin: 45px 150px 58px 70px;
 }
 
 footer h2{
@@ -367,4 +367,49 @@ footer h2{
 
 footer a{
     line-height: 35px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:375px){
+    /*HEADER*/
+    .filters{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .filter{
+        flex-wrap: wrap;
+    }
+
+    /*MAIN*/
+    #container{
+        
+        flex-direction: column-reverse;
+    }
+    /*HEBERGEMENTS*/
+    .container-hebergements{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card img{
+        width: 100%;
+        height: 124px;
+    }
+
+    /*ACTIVITES*/
+    .activites-cards{
+        flex-direction: column;
+    }
+
+    #activites img{
+        width: 100%;
+        height:134px;
+    }
+    /*FOOTER*/
+    footer{
+        flex-direction: column;
+        width:100%;
+    }
 }
