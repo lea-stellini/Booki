@@ -129,7 +129,7 @@ label i{
     justify-content: space-between;
     align-items: center;
     width: 914px;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
 }
 
 .filter-container{
@@ -180,10 +180,6 @@ label i{
 
 /*MAIN*/
 
-main{
-   
-}
-
 #container{
     display:flex;
     justify-content: space-between;
@@ -213,7 +209,7 @@ main{
 
     /*HEBREGEMENTS*/
 
-h2{
+#hebergements h2{
     padding-left: 40px;
 }   
 
