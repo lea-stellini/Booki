@@ -1,10 +1,10 @@
 /*GENERAL*/
 *{
-    margin:0;
+    margin: 0;
 }
 
 body{
-    margin: 0 auto;
+    margin: 0 5px;
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
 }
@@ -110,7 +110,7 @@ form{
 }
 
 label{
-    width: 15%;
+    width: 25%;
     border-radius: 15px 0 0 15px;
     background-color:#F2F2F2;
     
@@ -118,14 +118,14 @@ label{
 
 label i{
     position: relative;
-    top: 16px;
-    left: 18px;
+    top: 35%;
+    left: 35%;
 }
 
 #search{
     border: none;
     padding: 0 12px 0 17px;
-    width: 60%;
+    width: 100%;
 }
 
 #submit{
