@@ -26,12 +26,8 @@ h3{
     font-size: 16px;
 }
 
-p, a{
+p{
     font-weight: 400;
-    font-size: 14px;
-}
-
-.cards{
     font-size: 14px;
 }
 
@@ -92,11 +88,13 @@ li a{
 
 li a:hover{
     color: #0065FC;
+   
 }
 
 li:hover{
     padding-top:46px;
     border-top: solid 2px #0065FC;
+    color:#0065FC;
 }
 
     /*SEARCH + FILTERS*/
@@ -134,7 +132,9 @@ label i{
     background-color: #0065FC;
     color: #FFFFFF;
     padding: 14px 16px;
+    cursor: pointer;
 }
+
 
 .fa-magnifying-glass{
     display: none;
@@ -390,12 +390,18 @@ footer a{
     line-height: 35px;
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 1450px){
+    body{
+        margin: 0 2%;
+    }
+}
+
 /* RESPONSIVE MOBILE*/
 
 @media screen and (max-width:768px){
-   body{
-    margin: 0 2%;
-   }
+
     /*HEADER*/
     #top-bar{
         flex-direction: column;
@@ -445,8 +451,6 @@ footer a{
 
     #submit{
         border: 2px #0065FC solid;
-       
-        
     }
 
     .none{
@@ -575,18 +579,9 @@ footer a{
     }
 }
 
-@media screen and (max-width: 1450px){
-    body{
-        margin: 2%;
-    }
-}
-
 /* RESPONSIVE TABLETTE */
 
 @media screen and (max-width:992px) and (min-width: 768px){
-    body{
-        margin: 0 5%;
-    }
 
     /*HEADER*/
 
@@ -665,6 +660,7 @@ footer a{
 
     #activites h3{
         margin: 10px 0 0 15px;
+        padding-bottom:5px;
     }
 
     /*FOOTER*/
