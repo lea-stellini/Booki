@@ -73,22 +73,17 @@ ul{
    align-items: center;
 }
 
+a{
+    width: 100%;
+}
+
 li{
     list-style: none; 
-    width: 50%;
-    text-align: center;
-    padding-top: 48px;
-}
-
-li a{
+    width:100%;
     font-weight: 500;
     text-align: center;
-    width: 100%;  
-}
-
-li a:hover{
-    color: #0065FC;
-   
+    padding-top: 48px;
+    margin: auto;
 }
 
 li:hover{
@@ -165,7 +160,7 @@ label i{
 
 .filter:hover{
     background-color: #DEEBFF;
-    cursor: auto;
+    cursor: pointer;
 }
 
 .filter i {
@@ -240,7 +235,6 @@ label i{
 
 .container-hebergements{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -313,7 +307,7 @@ label i{
     box-shadow: 3px 3px 3px rgb(225, 225, 225);
 }
 
-.descriptif-right{
+.populaire-info{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
