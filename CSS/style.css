@@ -263,7 +263,6 @@ label i{
     margin-left: 16px;
     line-height: 20px;
     width:80%;
-   
 }
 
 .more{
@@ -452,7 +451,7 @@ footer a{
     }
 
     .fa-magnifying-glass{
-        display: block;
+        display: block; 
         color: #FFFFFF;
         position:relative;
         width:25%;
