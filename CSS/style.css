@@ -5,6 +5,7 @@
 
 body{
     margin: 0 auto;
+    padding: 0 2%;
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
 }
@@ -73,11 +74,13 @@ ul{
    align-items: center;
 }
 
-a{
+li{
     width: 100%;
+    list-style: none;
 }
 
-li{
+li a{
+    display:block;
     list-style: none; 
     width:100%;
     font-weight: 500;
@@ -86,7 +89,7 @@ li{
     margin: auto;
 }
 
-li:hover{
+li a:hover{
     padding-top:46px;
     border-top: solid 2px #0065FC;
     color:#0065FC;
@@ -221,13 +224,13 @@ label i{
     /*HEBREGEMENTS*/
 
 #hebergements h2{
-    padding-left: 40px;
+    padding: 0 0 5px 20px;
 }   
 
 #hebergements{
     display: flex;
     flex-direction: column;
-    justify-content:  space-evenly;
+    justify-content: center;
     background-color: #F2F2F2;
     border-radius: 20px;
     width:63%;
@@ -266,7 +269,7 @@ label i{
 }
 
 .more{
-    padding-left: 41px;
+    padding: 20px 0 0 20px;
     font-weight: bold;
 }
     /* POPULAIRE */
@@ -278,10 +281,11 @@ label i{
 }
 
 .title{
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 40px 35px 0 35px;
+    margin: auto;
+    padding: 30px 0 15px 0;
 }
 
 .container-populaire{
@@ -332,7 +336,6 @@ label i{
 }
 
 #activites h2{
-    margin-left: 2%;
     margin-bottom: 18px;
 }
 
@@ -344,7 +347,7 @@ label i{
 
 .activites-cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -383,19 +386,20 @@ footer a{
     line-height: 35px;
 }
 
-/* RESPONSIVE */
-
-@media screen and (max-width: 1450px){
-    body{
-        margin: 0 2%;
-    }
-}
 
 /* RESPONSIVE MOBILE*/
 
 @media screen and (max-width:768px){
-
+   /*GENERA*/
+   body{
+    padding:0;
+   }
     /*HEADER*/
+    header{
+        width: 100%;
+        margin: 0 auto;
+    }
+
     #top-bar{
         flex-direction: column;
         align-items: center;
@@ -411,15 +415,21 @@ footer a{
         justify-content: space-around;
     }
 
-    li{
+    li a{
         padding-bottom: 22px;
         border-bottom: solid 2px #F2F2F2;
     }
 
-    li:hover{
+    li a:hover{
         border-top: none;
         padding-bottom:22px;
         border-bottom: solid 2px #0065FC;
+    }
+
+    #search-bar{
+        width: 90%;
+        margin: 0 auto;
+        padding:0;
     }
 
     form{
@@ -454,7 +464,7 @@ footer a{
         display: block; 
         color: #FFFFFF;
         position:relative;
-        width:25%;
+        width:20%;
         top: 35%;
         left: 35%;
     }
@@ -499,7 +509,8 @@ footer a{
     }
     /*HEBERGEMENTS*/
     #hebergements{
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         background-color: #FFFFFF;
         border: none
     }
@@ -522,7 +533,7 @@ footer a{
     }
 
     .card img{
-        width: 97.5%;
+        width: 97%;
         height: 124px;
     }
 
@@ -539,13 +550,23 @@ footer a{
         justify-content: center;
     }
 
+    .title{
+        width:90%
+    }
+
     .populaire-card{
+        width: 90%;
         margin: 5px 0;
     }
 
     /*ACTIVITES*/
     #activites{
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #activites h2{
+        margin-top: 30px;
     }
 
     .activites-cards{
@@ -563,12 +584,14 @@ footer a{
     }
     /*FOOTER*/
     footer{
+        width: 100%;
         flex-direction: column;
         justify-content: center;
     }
 
     footer div{
         margin: 15px 0 15px 10px;
+        padding-left: 4%;
     }
 }
 
